@@ -7,11 +7,16 @@ A simple Progressive Web App (PWA) where touching/clicking the screen draws colo
 
 ### 1. Color Behavior
 **Question:** How should colors be selected for each touch?
-Cycle through a predefined color palette. Use rainbow color in first design.
+Cycle through a predefined color palette.
+Use 7 rainbow colors in first design. But I prefer less vivid tone.
 
 ### 2. Spot Appearance
 **Question:** What should the colored spots look like?
-A spot consists of 3 iso-centric circles. Animate with scaling.
+A spot consists of 3 concentric circles - 70%, 85%, 100%.
+Three circles are of the same color.
+
+First, animate with scaling. Grow from nothing to full size.
+And then small breathing animation.
 
 ### 3. Canvas Behavior
 **Question:** What happens when the screen fills up?
@@ -23,7 +28,7 @@ A spot starts like ripple.
 
 ### 5. App Features
 **Question:** What additional features do you want?
-- Prevent accidental exit if possible.
+- Full screen without exit button.
 
 ### 6. PWA Installation
 **Question:** App name and branding
