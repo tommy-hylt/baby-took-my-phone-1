@@ -40,9 +40,9 @@ export const Spot = ({ spot, isRemoving, onRemoved }: SpotProps) => {
         top: spot.y,
       }}
     >
-      <div className="circle circle-outer" style={{ backgroundColor: spot.color }} />
-      <div className="circle circle-middle" style={{ backgroundColor: spot.color }} />
-      <div className="circle circle-inner" style={{ backgroundColor: spot.color }} />
+      <div className="circle circle-outer" style={{ borderColor: spot.color }} />
+      <div className="circle circle-middle" style={{ borderColor: spot.color }} />
+      <div className="circle circle-inner" style={{ borderColor: spot.color }} />
     </div>
   );
 };
