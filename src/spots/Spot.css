@@ -10,24 +10,29 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: transparent;
+  border-style: solid;
 }
 
 .circle-outer {
   width: 100px;
   height: 100px;
-  opacity: 0.3;
+  border-width: 3px;
+  opacity: 0.8;
 }
 
 .circle-middle {
   width: 85px;
   height: 85px;
-  opacity: 0.5;
+  border-width: 3px;
+  opacity: 0.9;
 }
 
 .circle-inner {
   width: 70px;
   height: 70px;
-  opacity: 0.7;
+  border-width: 3px;
+  opacity: 1;
 }
 
 /* Ripple animation: grow from 0 to full size */
