@@ -4,6 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/baby-took-my-phone-1/',
   plugins: [
     react(),
     VitePWA({

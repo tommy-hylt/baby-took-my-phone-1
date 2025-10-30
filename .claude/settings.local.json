@@ -11,7 +11,8 @@
       "Bash(npm run build:*)",
       "Bash(robocopy:*)",
       "Bash(xcopy baby-app*.* . /E /H /Y /EXCLUDE:baby-appnode_modules )",
-      "Bash(xcopy:*)"
+      "Bash(xcopy:*)",
+      "Bash(npm run deploy:*)"
     ],
     "deny": [],
     "ask": []

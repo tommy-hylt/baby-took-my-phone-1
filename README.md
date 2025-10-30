@@ -2,6 +2,8 @@
 
 A simple Progressive Web App for babies. Touch the screen to create colorful animated spots!
 
+**Live Demo:** https://tommy-hylt.github.io/baby-took-my-phone-1/
+
 ## Features
 
 - Touch/click creates animated concentric circles (70%, 85%, 100% sizes)
@@ -29,16 +31,12 @@ npm run build
 npm run preview
 ```
 
-## Production Deployment (GitHub Pages)
+## Deployment
 
-1. Build the project:
+Deploy to GitHub Pages:
 ```bash
-npm run build
+npm run deploy
 ```
-
-2. The `dist` folder contains the production build
-
-3. Configure GitHub Pages to serve from the appropriate branch/folder
 
 ## Project Structure
 
