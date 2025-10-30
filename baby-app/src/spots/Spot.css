@@ -1,0 +1,59 @@
+.spot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-outer {
+  width: 100px;
+  height: 100px;
+  opacity: 0.3;
+}
+
+.circle-middle {
+  width: 85px;
+  height: 85px;
+  opacity: 0.5;
+}
+
+.circle-inner {
+  width: 70px;
+  height: 70px;
+  opacity: 0.7;
+}
+
+/* Ripple animation: grow from 0 to full size */
+.spot.ripple .circle {
+  animation: ripple 0.5s ease-out forwards;
+}
+
+@keyframes ripple {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Breathing animation: subtle pulse */
+.spot.breathing .circle {
+  animation: breathe 3s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
