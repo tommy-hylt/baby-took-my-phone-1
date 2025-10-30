@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(dir:*)",
+      "Bash(npm install)",
+      "Bash(mkdir:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout /t 5)",
+      "Bash(npm run build:*)",
+      "Bash(robocopy:*)",
+      "Bash(xcopy baby-app*.* . /E /H /Y /EXCLUDE:baby-appnode_modules )",
+      "Bash(xcopy:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
