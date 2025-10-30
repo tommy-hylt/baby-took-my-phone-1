@@ -4,10 +4,12 @@ import type { SpotData } from './types';
 
 interface SpotProps {
   spot: SpotData;
+  isRemoving: boolean;
+  onRemoved: (id: string) => void;
 }
 
-export const Spot = ({ spot }: SpotProps) => {
-  const [phase, setPhase] = useState<'ripple' | 'breathing'>('ripple');
+export const Spot = ({ spot, isRemoving, onRemoved }: SpotProps) => {
+  const [phase, setPhase] = useState<'ripple' | 'breathing' | 'shrinking'>('ripple');
 
   useEffect(() => {
     // Transition from ripple to breathing after ripple animation completes
@@ -17,6 +19,18 @@ export const Spot = ({ spot }: SpotProps) => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    if (isRemoving) {
+      setPhase('shrinking');
+      // Remove from DOM after shrink animation completes
+      const timer = setTimeout(() => {
+        onRemoved(spot.id);
+      }, 500); // Match shrink animation duration
+
+      return () => clearTimeout(timer);
+    }
+  }, [isRemoving, onRemoved, spot.id]);
 
   return (
     <div

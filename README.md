@@ -4,10 +4,12 @@ A simple Progressive Web App for babies. Touch the screen to create colorful ani
 
 ## Features
 
-- Touch/click creates animated concentric circles
+- Touch/click creates animated concentric circles (70%, 85%, 100% sizes)
 - 7 muted rainbow colors that cycle through
-- Ripple animation followed by gentle breathing effect
-- Spots auto-remove after 30 seconds
+- Ripple animation (grow from nothing) on creation
+- Gentle breathing animation while alive
+- Shrink-to-nothing animation on removal
+- Spots auto-remove after 10 seconds
 - Full-screen mode
 - PWA installable on mobile devices
 

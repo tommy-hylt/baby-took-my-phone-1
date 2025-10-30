@@ -15,12 +15,13 @@ Use 7 rainbow colors in first design. But I prefer less vivid tone.
 A spot consists of 3 concentric circles - 70%, 85%, 100%.
 Three circles are of the same color.
 
-First, animate with scaling. Grow from nothing to full size.
-And then small breathing animation.
+First, animate with scaling. Grow from nothing to full size (ripple animation).
+Then small breathing animation while alive.
+Finally, shrink to nothing on removal.
 
 ### 3. Canvas Behavior
 **Question:** What happens when the screen fills up?
-A spot should be removed after 30 seconds.
+A spot should be removed after 10 seconds with a shrink animation.
 
 ### 4. Touch Feedback
 **Question:** Should there be any additional feedback?
