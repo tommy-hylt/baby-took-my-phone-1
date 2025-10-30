@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import type { SpotData } from '../spots/types';
-import { getNextColor } from '../spots/colors';
+import { getNextColor } from './colors';
 
 interface UseTouchOptions {
   onAddSpot: (spot: SpotData) => void;
@@ -24,12 +24,13 @@ export const useTouch = ({ onAddSpot }: UseTouchOptions) => {
       y = event.clientY;
     }
 
+    const createdAt = Date.now();
     const newSpot: SpotData = {
-      id: `${Date.now()}-${Math.random()}`,
+      id: `${createdAt}-${Math.random()}`,
       x,
       y,
-      color: getNextColor(),
-      createdAt: Date.now(),
+      color: getNextColor(createdAt),
+      createdAt,
     };
 
     onAddSpot(newSpot);
