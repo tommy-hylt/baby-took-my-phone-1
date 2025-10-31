@@ -48,6 +48,6 @@ src/
 └── index.css        # Global styles
 ```
 
-## PWA Icons
+## PWA Icon
 
-The app uses placeholder SVG icons. Replace `public/pwa-192x192.svg` and `public/pwa-512x512.svg` with proper PNG icons showing a baby holding a phone for production use.
+The app uses `public/icon_512.png` as the PWA icon. Replace with your own icon if needed.

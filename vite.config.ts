@@ -9,7 +9,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
+      includeAssets: ['icon_512.png'],
       manifest: {
         name: 'Baby Took My Phone 1',
         short_name: 'BabyPhone',
@@ -20,19 +20,14 @@ export default defineConfig({
         orientation: 'any',
         icons: [
           {
-            src: 'pwa-192x192.svg',
-            sizes: '192x192',
-            type: 'image/svg+xml',
+            src: 'icon_512.png',
+            sizes: '512x512',
+            type: 'image/png',
           },
           {
-            src: 'pwa-512x512.svg',
+            src: 'icon_512.png',
             sizes: '512x512',
-            type: 'image/svg+xml',
-          },
-          {
-            src: 'pwa-512x512.svg',
-            sizes: '512x512',
-            type: 'image/svg+xml',
+            type: 'image/png',
             purpose: 'any maskable',
           },
         ],
