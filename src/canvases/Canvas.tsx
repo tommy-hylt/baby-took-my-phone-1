@@ -14,7 +14,7 @@ export const Canvas = () => {
     setSpots((prev) => [...prev, spot]);
   };
 
-  const { handleTouch } = useTouch({ onAddSpot: handleAddSpot });
+  const { handleTouchStart, handleTouchMove, handleTouchEnd } = useTouch({ onAddSpot: handleAddSpot });
 
   const handleRemoveSpot = useCallback((id: string) => {
     setSpots((prev) => prev.filter((spot) => spot.id !== id));
@@ -45,8 +45,12 @@ export const Canvas = () => {
   return (
     <div
       className="canvas"
-      onTouchStart={handleTouch}
-      onClick={handleTouch}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+      onMouseDown={handleTouchStart}
+      onMouseMove={handleTouchMove}
+      onMouseUp={handleTouchEnd}
     >
       {spots.map((spot) => (
         <Spot
