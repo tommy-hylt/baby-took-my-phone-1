@@ -4,6 +4,8 @@ A simple Progressive Web App for babies. Touch the screen to create colorful ani
 
 **Live Demo:** https://tommy-hylt.github.io/baby-took-my-phone-1/
 
+![App Preview](preview/preview.gif)
+
 ## Features
 
 - Touch/click creates animated concentric circles (70%, 85%, 100% sizes)
